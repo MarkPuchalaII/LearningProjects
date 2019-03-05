@@ -24,16 +24,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="6j9-Ta-aLZ">
                                 <rect key="frame" x="40" y="346" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="3Ou-Gw-nxl"/>
-                                    <constraint firstAttribute="height" constant="120" id="CbW-8Z-5zm"/>
+                                    <constraint firstAttribute="width" constant="120" id="ohr-Yd-V9V"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="DSP-AW-PDR">
-                                <rect key="frame" x="217" y="346" width="120" height="120"/>
+                                <rect key="frame" x="220" y="346" width="120" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AST-AC-BFh">
+                                <rect key="frame" x="67" y="121" width="241" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-XW-Z5C">
-                                <rect key="frame" x="124" y="564" width="127" height="49"/>
+                                <rect key="frame" x="125" y="563" width="125" height="49"/>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Sfd-lV-w40"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,29 +47,26 @@
                                     <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kod-S7-4OW"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AST-AC-BFh">
-                                <rect key="frame" x="67" y="121" width="240" height="128"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uVi-XW-Z5C" secondAttribute="bottom" constant="165" id="7Fs-lD-3Id"/>
-                            <constraint firstItem="DSP-AW-PDR" firstAttribute="centerY" secondItem="1FF-0X-eMx" secondAttribute="centerY" id="9HA-XM-qFn"/>
-                            <constraint firstItem="6j9-Ta-aLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="D6f-zK-f2t"/>
-                            <constraint firstItem="uVi-XW-Z5C" firstAttribute="top" secondItem="6j9-Ta-aLZ" secondAttribute="bottom" constant="98" id="DJR-9j-Tq8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DSP-AW-PDR" secondAttribute="trailing" constant="38" id="F66-OU-sE0"/>
-                            <constraint firstItem="AST-AC-BFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="G3y-Sq-MCQ"/>
-                            <constraint firstItem="AST-AC-BFh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="Ic6-Uf-J8l"/>
-                            <constraint firstItem="AST-AC-BFh" firstAttribute="centerX" secondItem="uVi-XW-Z5C" secondAttribute="centerX" id="J2c-Kx-yfB"/>
-                            <constraint firstItem="1FF-0X-eMx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LnD-bh-tEG"/>
-                            <constraint firstItem="DSP-AW-PDR" firstAttribute="leading" secondItem="6j9-Ta-aLZ" secondAttribute="trailing" constant="57" id="W4f-Cp-a08"/>
-                            <constraint firstItem="DSP-AW-PDR" firstAttribute="bottom" secondItem="6j9-Ta-aLZ" secondAttribute="bottom" id="co9-xs-cJU"/>
-                            <constraint firstItem="AST-AC-BFh" firstAttribute="centerX" secondItem="1FF-0X-eMx" secondAttribute="centerX" id="gFV-35-Oyp"/>
-                            <constraint firstItem="6j9-Ta-aLZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gzq-Ds-0eI"/>
-                            <constraint firstItem="1FF-0X-eMx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jOo-KC-T22"/>
-                            <constraint firstItem="DSP-AW-PDR" firstAttribute="top" secondItem="6j9-Ta-aLZ" secondAttribute="top" id="kGo-lB-1pH"/>
-                            <constraint firstItem="uVi-XW-Z5C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="kx5-dG-mIU"/>
-                            <constraint firstAttribute="trailing" secondItem="1FF-0X-eMx" secondAttribute="trailing" id="m5s-h8-24U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DSP-AW-PDR" secondAttribute="trailing" constant="35" id="15u-bD-MTN"/>
+                            <constraint firstItem="1FF-0X-eMx" firstAttribute="centerY" secondItem="6j9-Ta-aLZ" secondAttribute="centerY" id="5mo-2k-P0h"/>
+                            <constraint firstAttribute="trailing" secondItem="1FF-0X-eMx" secondAttribute="trailing" id="8il-NC-7Ii"/>
+                            <constraint firstItem="AST-AC-BFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="9hX-U0-U8F"/>
+                            <constraint firstItem="AST-AC-BFh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="Aro-q0-ITP"/>
+                            <constraint firstItem="uVi-XW-Z5C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="CnM-St-aJO"/>
+                            <constraint firstItem="6j9-Ta-aLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="N5g-uf-pvr"/>
+                            <constraint firstItem="1FF-0X-eMx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YEk-OE-eqM"/>
+                            <constraint firstItem="1FF-0X-eMx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b3u-6Q-5oN"/>
+                            <constraint firstItem="1FF-0X-eMx" firstAttribute="centerX" secondItem="AST-AC-BFh" secondAttribute="centerX" id="eVY-Hh-Wn0"/>
+                            <constraint firstItem="6j9-Ta-aLZ" firstAttribute="top" secondItem="DSP-AW-PDR" secondAttribute="top" id="fT1-DB-BIr"/>
+                            <constraint firstItem="uVi-XW-Z5C" firstAttribute="top" secondItem="6j9-Ta-aLZ" secondAttribute="bottom" constant="97" id="iGq-GC-xAq"/>
+                            <constraint firstAttribute="bottom" secondItem="1FF-0X-eMx" secondAttribute="bottom" id="mI6-7W-ILr"/>
+                            <constraint firstItem="AST-AC-BFh" firstAttribute="centerX" secondItem="uVi-XW-Z5C" secondAttribute="centerX" id="oJO-kZ-7rD"/>
+                            <constraint firstItem="6j9-Ta-aLZ" firstAttribute="bottom" secondItem="DSP-AW-PDR" secondAttribute="bottom" id="oTZ-Dn-9tr"/>
+                            <constraint firstItem="DSP-AW-PDR" firstAttribute="leading" secondItem="6j9-Ta-aLZ" secondAttribute="trailing" constant="60" id="qqo-Kc-7sz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uVi-XW-Z5C" secondAttribute="bottom" constant="166" id="qtf-CS-Ech"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
